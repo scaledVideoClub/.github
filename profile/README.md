@@ -1,4 +1,4 @@
-## Main Objective
+# Main Objective
 
 Build a video rental system across 8 sequential stages, evolving across technologies and paradigms:
 
@@ -11,12 +11,26 @@ Build a video rental system across 8 sequential stages, evolving across technolo
 * AI Skills — Learn to work with Claude Code in a spec-driven workflow. Use AI as a controlled accelerator, not a replacement for thinking. Practice prompt discipline, context management, and AI-assisted code review and testing.
 Execution Model
 
-# Work one stage at a time
+## Work one stage at a time
 * Fully complete a stage before starting the next
 * Each stage has its own spec set, its own repo, its own Jira space
 * Specs must be rewritten per stage — not copied
 * No future-stage concepts allowed in any stage
 
+##  Learning Objectives (Explicit)
+
+Each stage targets specific skills beyond "learn technology X."
+
+| Stage | Primary Learning Objectives |
+|-------|----------------------------|
+| 1 | Understand procedural flow without OOP scaffolding. Work within real constraints (no functions-as-objects, no events). |
+| 2 | Event-driven thinking: what triggers what. Separating UI concerns from data without a framework forcing you. |
+| 3 | Why separation of concerns matters. Practice explicit layering as a discipline, not a pattern imposed by a tool. |
+| 4 | Manual memory and resource management. Understanding what higher-level languages abstract away. |
+| 5 | Layered architecture in a typed, enterprise-style language. Services, repositories, unit testing discipline. |
+| 6 | Convention over configuration. MVC. How Rails shapes decisions. Auth. Background jobs. |
+| 7 | Distributed systems basics. REST API design. SPA/frontend architecture. Concurrency and state. Redis. |
+| 8 | Consuming an existing REST API from mobile. Cross-platform UI constraints. Offline/online state management. UX design for small screens. No backend changes. |
 
 ## Stage Repositories
 
@@ -29,9 +43,10 @@ Execution Model
 | 5 | [vc-stage5-csharp](https://github.com/scaledVideoClub/vc-stage5-csharp) | C# WPF |
 | 6 | [vc-stage6-rails](https://github.com/scaledVideoClub/vc-stage6-rails) | Ruby on Rails |
 | 7 | [vc-stage7-python](https://github.com/scaledVideoClub/vc-stage7-python) | Python + React |
+| 8 | [vc-stage8-mobile](https://github.com/scaledVideoClub/vc-stage8-mobile) |React Native |
 
 
-## Development Practice Progression
+# Development Practice Progression
 
 Each stage deliberately mirrors the development culture of its era.
 This is intentional — do not apply modern practices to early stages.
@@ -47,6 +62,7 @@ The four key disciplines evolve incrementally across stages:
 | 5 — C# WPF | Interface contracts in spec | TDD starts here | Claude CR blocking | PR template enforced |
 | 6 — Rails | BDD acceptance scenarios | Full TDD, CI-gated | Claude Code CLI | Commit IDs in Jira |
 | 7 — Python+React | API-first, OpenAPI spec | TDD + E2E, CI blocking | Automated linting + CR | Full story mapping |
+| 8 — Mobile | API contract as spec (no backend changes) | Component tests + contract tests (Pact) + E2E on device | Claude Code CLI + linting | Full story mapping |
 
 ### Why this matters
 
